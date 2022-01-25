@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+pkg="catmod-reborn-again"
+
+version="$(jq -r .version < ./"$pkg"/info.json)"
+
+(set -x ; zip -r "$pkg"_"$version".zip ./"$pkg")

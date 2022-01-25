@@ -1,0 +1,12 @@
+{
+    "name": "Catmod-Reborn-Again",
+    "title": "Catmod-Reborn-Again",
+    "version": "1.0.2",
+    "date": "2022-01-25",
+    "author": "AnEntireSleeve",
+    "dependencies": [
+        "base >= 0.18.4"
+    ],
+    "factorio_version": "1.1",
+    "description": "It gets lonely on the planet when everything wants to kill you. At least these feline friends will keep you company. Credits to Danielv123 for the artwork and sounds"
+}
