@@ -439,6 +439,17 @@ function catdieanimation(scale, tint1, tint2)
     }
 end
 
+local collision_mask = {"not-colliding-with-itself"}
+local player_mask = "player-layer"
+local train_mask = "train-layer"
+
+if settings.startup["catmod-reborn-again-collision-player"].value then
+  table.insert(collision_mask, player_mask)
+end
+if settings.startup["catmod-reborn-again-collision-trains"].value then
+  table.insert(collision_mask, train_mask)
+end
+
 data:extend(
     {
         {
@@ -485,6 +496,7 @@ data:extend(
             },
             collision_box = {{-0.3, -0.7}, {0.9, 0.7}},
             selection_box = {{-0.3, -0.7}, {0.9, 0.7}},
+            collision_mask = collision_mask,
             min_pursue_time = 10 * 60,
             max_pursue_distance = 80,
             max_health = 675,
