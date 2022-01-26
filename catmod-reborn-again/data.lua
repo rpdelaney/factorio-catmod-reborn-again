@@ -15,7 +15,7 @@ function catrunanimation(scale, tint1, tint2)
                 scale = scale,
                 stripes = {
                     {
-                        filename = "__Catmod-Reborn__/graphics/cat_lr.png",
+                        filename = "__Catmod-Reborn-Again__/graphics/cat_lr.png",
                         width_in_frames = 8,
                         height_in_frames = 10
                     }
@@ -473,7 +473,7 @@ data:extend(
         {
             type = "unit",
             name = "cat",
-            icon = "__Catmod-Reborn__/graphics/cat_icon.png",
+            icon = "__Catmod-Reborn-Again__/graphics/cat_icon.png",
             icon_size = 128,
             flags = {
                 "placeable-player",
@@ -499,11 +499,11 @@ data:extend(
             run_animation = catrunanimation(cat_scale, cat_tint1, cat_tint2),
             working_sound = {
                 sound = {
-                    filename = "__Catmod-Reborn__/sound/meow3.ogg",
+                    filename = "__Catmod-Reborn-Again__/sound/meow3.ogg",
                     volume = 0.5,
                     aggregation = {max_count = 1, count_already_playing = true, remove = true}
                 },
-                --idle_sound = {filename = "__Catmod-Reborn__/sound/meow1.ogg", volume = 0.5},
+                --idle_sound = {filename = "__Catmod-Reborn-Again__/sound/meow1.ogg", volume = 0.5},
                 probability = 1 / (40 * 60) -- average cat meow every 40 seconds
             },
             attack_parameters = {
@@ -513,7 +513,7 @@ data:extend(
                 ammo_type = make_unit_melee_ammo_type(30),
                 animation = catattackanimation(cat_scale, cat_tint1, cat_tint2),
                 sound = {
-                    filename = "__Catmod-Reborn__/sound/cat_hiss.ogg",
+                    filename = "__Catmod-Reborn-Again__/sound/cat_hiss.ogg",
                     volume = 0.5,
                     aggregation = {max_count = 2, remove = true, count_already_playing = true}
                 }
@@ -525,7 +525,7 @@ data:extend(
         {
             type = "item",
             name = "cat",
-            icon = "__Catmod-Reborn__/graphics/cat_icon.png",
+            icon = "__Catmod-Reborn-Again__/graphics/cat_icon.png",
             icon_size = 128,
             stack_size = 1,
             place_result = "cat"
@@ -533,7 +533,7 @@ data:extend(
         {
             type = "item",
             name = "cat-factory",
-            icon = "__Catmod-Reborn__/graphics/cat_factory.png",
+            icon = "__Catmod-Reborn-Again__/graphics/cat_factory.png",
             icon_size = 256,
             stack_size = 1,
             place_result = "cat-factory"
@@ -541,7 +541,7 @@ data:extend(
         {
             type = "assembling-machine",
             name = "cat-factory",
-            icon = "__Catmod-Reborn__/graphics/cat_factory.png",
+            icon = "__Catmod-Reborn-Again__/graphics/cat_factory.png",
             icon_size = 256,
             flags = {"placeable-neutral", "placeable-player", "player-creation"},
             minable = {mining_time = 1, result = "cat-factory"},
@@ -578,7 +578,7 @@ data:extend(
             animation = {
                 layers = {
                     {
-                        filename = "__Catmod-Reborn__/graphics/cat_factory.png",
+                        filename = "__Catmod-Reborn-Again__/graphics/cat_factory.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
@@ -592,7 +592,7 @@ data:extend(
             working_visualisations = {
                 layers = {
                     {
-                        filename = "__Catmod-Reborn__/graphics/cat_factory.png",
+                        filename = "__Catmod-Reborn-Again__/graphics/cat_factory.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
