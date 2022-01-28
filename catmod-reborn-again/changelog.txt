@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 25JAN2022
+  Changes:
+    - added startup setting to toggle player collision
+    - added startup setting to toggle train collision
+    - fixed graphics filenames
+    - added changelog

@@ -6,7 +6,7 @@
     "description": "It gets lonely on the planet when everything wants to kill you. At least these feline friends will keep you company. Credits to Danielv123 for the artwork and sounds",
     "factorio_version": "1.1",
     "homepage": "https://github.com/rpdelaney/factorio-modpack",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "dependencies": [
         "base >= 0.18.4"
     ]
